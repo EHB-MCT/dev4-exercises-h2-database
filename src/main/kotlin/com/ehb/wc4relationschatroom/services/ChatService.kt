@@ -21,7 +21,7 @@ class ChatService {
 
     fun newMessage( chatRequest: NewChatRequest): Message {
         // So much to check here
-        var newMessage = Message(value = chatRequest.message, time = Date());
+        var newMessage = Message(content = chatRequest.message, time = Date());
         // - Everything ok? Save the message and update all objects
 
         // - Does the chatroom exist? If not: create new chatroom

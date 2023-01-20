@@ -39,7 +39,7 @@ class ChatController {
         for (m in list){
             messageResponseList.add(
                 MessageResponse(
-                    message = m.value,
+                    message = m.content,
                     userId = m.user.id,
                     chatroomId = m.chatroom.id,
                     time = m.time))

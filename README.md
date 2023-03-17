@@ -23,7 +23,7 @@ localhost:9000/users
 
 ### POST user
 ```url
-localhost:9000/chat
+localhost:9000/users
 ```
 
 - username (String)

@@ -25,6 +25,8 @@ class ChatService {
         // - Everything ok? Save the message and update all objects
 
         // - Does the chatroom exist? If not: create new chatroom
+        // Tip: to avoid having to create custom repository functions
+        // you could use the chatroom id and find it using the existing findById
         var chatroom = chatroomRepository.findByName(chatRequest.chatroomName)
 
         if(!chatroom.isPresent){

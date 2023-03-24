@@ -27,5 +27,5 @@ localhost:9000/users
 ```
 
 - username (String)
-- email (Long)
+- email (String)
 - picture (String)

@@ -8,7 +8,9 @@ import com.ehb.wc4relationschatroom.repositories.ChatroomRepository
 import com.ehb.wc4relationschatroom.repositories.MessageRepository
 import com.ehb.wc4relationschatroom.repositories.UserRepository
 import org.springframework.beans.factory.annotation.Autowired
+import org.springframework.http.HttpStatus
 import org.springframework.stereotype.Service
+import org.springframework.web.server.ResponseStatusException
 import java.util.*
 
 @Service
@@ -46,6 +48,9 @@ class ChatService {
             newMessage.user = temp.get();
         }else{
             //Throw Error
+            // Teacher note: custom errors are not known at this point
+            // Add server.error.include-message=always to application properties to include exception reason in response
+            throw ResponseStatusException(HttpStatus.BAD_REQUEST, "User not found")
         }
 
         //Save the message

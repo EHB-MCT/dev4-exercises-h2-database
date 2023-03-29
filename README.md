@@ -13,7 +13,7 @@ localhost:9000/chat
 ```
 
 - chatroomName (String)
-- userID (Long)
+- userId (Long)
 - message (String)
 
 ### GET users

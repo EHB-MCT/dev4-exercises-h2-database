@@ -11,9 +11,8 @@ data class Chatroom(
     @Id
     @GeneratedValue
     var id: Long = -1,
-    var name: String,
-    var iconUrl: String
-
+    var name: String = "",
+    var iconUrl: String = ""
 ){
     @ManyToMany
     open var users: List<User> = listOf()

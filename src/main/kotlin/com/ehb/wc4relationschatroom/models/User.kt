@@ -16,11 +16,9 @@ data class User(
     @GeneratedValue
     var id: Long = -1,
 
-    var username: String,
-    var email: String,
-    var picture: String
-
-
+    var username: String = "",
+    var email: String = "",
+    var picture: String = ""
 ){
     @ManyToMany
     open var chatrooms: List<Chatroom> = listOf()

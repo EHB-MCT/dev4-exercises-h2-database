@@ -14,8 +14,8 @@ data class Message(
 
     // Value is a reserved keyword, which means we can't use it easily
     // As such, we'll use "content" instead
-    var content: String,
-    var time: Date
+    var content: String = "",
+    var time: Date = Date()
 ){
     @ManyToOne
     open lateinit var chatroom: Chatroom

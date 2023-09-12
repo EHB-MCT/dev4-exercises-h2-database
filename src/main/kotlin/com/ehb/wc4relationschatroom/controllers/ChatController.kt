@@ -5,6 +5,7 @@ import com.ehb.wc4relationschatroom.dto.NewChatRequest
 import com.ehb.wc4relationschatroom.models.Message
 import com.ehb.wc4relationschatroom.services.ChatService
 import org.springframework.beans.factory.annotation.Autowired
+import org.springframework.web.bind.annotation.CrossOrigin
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PostMapping
 import org.springframework.web.bind.annotation.RequestBody
@@ -15,6 +16,7 @@ import org.springframework.web.bind.annotation.RestController
 
 @RestController
 @RequestMapping("chat")
+@CrossOrigin
 class ChatController {
 
     @Autowired

@@ -4,6 +4,7 @@ import com.ehb.wc4relationschatroom.dto.CreateUserRequest
 import com.ehb.wc4relationschatroom.models.User
 import com.ehb.wc4relationschatroom.services.UserService
 import org.springframework.beans.factory.annotation.Autowired
+import org.springframework.web.bind.annotation.CrossOrigin
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PostMapping
 import org.springframework.web.bind.annotation.RequestBody
@@ -12,6 +13,7 @@ import org.springframework.web.bind.annotation.RestController
 
 @RestController
 @RequestMapping("users")
+@CrossOrigin
 class UserController {
 
     @Autowired

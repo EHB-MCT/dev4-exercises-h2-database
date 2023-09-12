@@ -43,6 +43,7 @@ class ChatController {
                 MessageResponse(
                     message = m.content,
                     userId = m.user.id,
+                    user = m.user,
                     chatroomId = m.chatroom.id,
                     time = m.time))
         }

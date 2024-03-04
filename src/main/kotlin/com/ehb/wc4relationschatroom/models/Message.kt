@@ -18,8 +18,8 @@ data class Message(
     var time: Date = Date()
 ){
     @ManyToOne
-    open lateinit var chatroom: Chatroom
+    lateinit var chatroom: Chatroom
 
     @ManyToOne
-    open lateinit var user: User
+    lateinit var user: User
 }

@@ -15,9 +15,9 @@ data class Chatroom(
     var iconUrl: String = ""
 ){
     @ManyToMany
-    open var users: List<User> = listOf()
+    var users: List<User> = listOf()
 
     @OneToMany
-    open var messages: List<Message> = listOf()
+    var messages: List<Message> = listOf()
 
 }

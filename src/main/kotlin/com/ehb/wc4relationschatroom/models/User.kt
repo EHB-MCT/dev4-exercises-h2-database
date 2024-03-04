@@ -21,8 +21,8 @@ data class User(
     var picture: String = ""
 ){
     @ManyToMany
-    open var chatrooms: List<Chatroom> = listOf()
+    var chatrooms: List<Chatroom> = listOf()
 
     @OneToMany
-    open var messages: List<Message> = listOf()
+    var messages: List<Message> = listOf()
 }

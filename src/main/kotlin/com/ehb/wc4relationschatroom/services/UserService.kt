@@ -17,9 +17,9 @@ class UserService {
     }
 
     fun saveUser(user: CreateUserRequest): User {
-        val u = User(username = user.username, email = user.email, picture = user.picture);
+        val u = User(username = user.username, email = user.email, picture = user.picture)
 
-        return userRepo.save(u);
+        return userRepo.save(u)
 
     }
 }

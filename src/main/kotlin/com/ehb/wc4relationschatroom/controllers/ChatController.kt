@@ -32,8 +32,8 @@ class ChatController {
 
     @GetMapping
     fun getMessages(): List<MessageResponse>{
-        var tempList = chatService.getMessages();
-        return convertList(tempList);
+        var tempList = chatService.getMessages()
+        return convertList(tempList)
     }
 
     fun convertList(list: List<Message>): List<MessageResponse>{
@@ -48,7 +48,7 @@ class ChatController {
                     time = m.time))
         }
 
-        return messageResponseList;
+        return messageResponseList
     }
 
 }

@@ -17,14 +17,14 @@ import org.springframework.web.bind.annotation.RestController
 class UserController {
 
     @Autowired
-    lateinit var userService: UserService;
+    lateinit var userService: UserService
 
     @GetMapping
     fun index(): List<User> {
         //Get all users
-        val users = userService.getAllUsers();
+        val users = userService.getAllUsers()
 
-        return users;
+        return users
     }
 
     @PostMapping

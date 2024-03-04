@@ -23,7 +23,7 @@ class ChatService {
 
     fun newMessage( chatRequest: NewChatRequest): Message {
         // So much to check here
-        var newMessage = Message(content = chatRequest.message, time = Date());
+        var newMessage = Message(content = chatRequest.message, time = Date())
         // - Everything ok? Save the message and update all objects
 
         // - Does the chatroom exist? If not: create new chatroom
@@ -45,7 +45,7 @@ class ChatService {
         var temp: Optional<User> = userRepository.findById(chatRequest.userId)
         // We get back an Optional<User>. Let's map it to either User or Null
         if(temp.isPresent){
-            newMessage.user = temp.get();
+            newMessage.user = temp.get()
         }else{
             //Throw Error
             // Teacher note: custom errors are not known at this point
@@ -54,12 +54,12 @@ class ChatService {
         }
 
         //Save the message
-        return messageRepository.save(newMessage);
+        return messageRepository.save(newMessage)
 
     }
 
     fun getMessages(): List<Message> {
-        return messageRepository.findAll();
+        return messageRepository.findAll()
     }
 
 

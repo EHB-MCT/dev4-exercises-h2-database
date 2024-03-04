@@ -7,7 +7,7 @@ import jakarta.persistence.ManyToMany
 import jakarta.persistence.OneToMany
 
 @Entity
-data class Chatroom(
+class Chatroom(
     @Id
     @GeneratedValue
     var id: Long = -1,

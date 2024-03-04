@@ -11,7 +11,7 @@ import jakarta.persistence.Table
 // Message is a reserved keyword, which means we can't use it easily
 // As such, we use an annotation to change the table name slightly
 @Table(name = "users")
-data class User(
+class User(
     @Id
     @GeneratedValue
     var id: Long = -1,

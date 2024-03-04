@@ -7,7 +7,7 @@ import java.util.Date
 // Message is a reserved keyword, which means we can't use it easily
 // As such, we use an annotation to change the table name slightly
 // @Table(name = "messages")
-data class Message(
+class Message(
     @Id
     @GeneratedValue
     var id:Long = -1,
